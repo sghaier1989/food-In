@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sghaier.foodin.Pannier">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/cart_items"
+        android:id="@+id/itemscommandes"
+        android:gravity="center_vertical|center_horizontal">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout8"
+                android:gravity="left|center_vertical"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/linearLayout18"
+                android:layout_toStartOf="@+id/linearLayout18">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="135dp"
+                    android:maxWidth="135dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Sada Nan"
+
+                        android:textSize="16dp"
+                        android:width="130dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/itemspaniers_tv_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="2,00€"
+                        android:textSize="13dp"
+                        android:width="90dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/itemspaniers_tv_prix"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/itemspaniers_tv_title"
+                        android:layout_toEndOf="@+id/itemspaniers_tv_title" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:maxWidth="135dp"
+                    android:textSize="12dp"
+                    android:text="Sans suplément"
+                    android:id="@+id/itemspaniers_tv_subtitle" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="13dp"
+                android:src="@drawable/avatar"
+                android:id="@+id/cart_icon"
+                android:layout_marginLeft="5dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal|right"
+                android:layout_gravity="right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/linearLayout18">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="3"
+                    android:textSize="18dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/itemspaniers_tv_nbr" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ajouter"
+                    android:id="@+id/itemspaniers_tv_inc" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ajouter"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:id="@+id/itemspaniers_tv_dec" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

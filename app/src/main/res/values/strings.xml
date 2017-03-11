@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">FoodIn</string>
+    <string name="facebook">Se connecter avec Facebook</string>
+    <string name="app_id_fcb">1081423181915944</string>
+    <string name="hint_adresse_email">Adresse email</string>
+    <string name="hint_passwd">Mot de passe</string>
+    <string name="forget_passwd">Mot de passe oublié</string>
+    <string name="connect">Se connecter</string>
+    <string name="create_acount">Pas de compte ? Je m\'enregistre ici</string>
+    <string name="prenom">Prenom</string>
+    <string name="nom">Nom</string>
+    <string name="confirm_passwd">Confirmation de mot de passe</string>
+    <string name="hint_adresse_postale">Adresse</string>
+    <string name="hint_adresse_postale_cp">Complément adresse</string>
+    <string name="hint_phone">Téléphone</string>
+    <string name="hint_date_naiss">Date de naissance</string>
+    <string name="validate">Enregistrer</string>
+    <string name="title_activity_payement">Payement</string>
+    <string name="title_activity_adress_delivery">AdressDelivery</string>
+    <string name="title_adress_delivry">Adresse de livraison</string>
+    <string name="subtitle_adress_delivry">deplacez l\'épingle pour ajuster l\'adresse</string>
+    <string name="str_adreess">Adresse de Facturation</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu_compte">MenuCompte</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="str_description">La Référence de la cuisine indienne sur Aix-en-provence . L\'inde pays aux multiples visages. a envouté tous les ...</string>
+    <string name="title_commande_final">Votre Commande</string>
+    <string name="items_status">Livraison | A emporter | Reservation</string>
+    <string name="title_activity_testmenu">testmenu</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

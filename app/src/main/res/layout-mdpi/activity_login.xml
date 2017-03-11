@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/splash"
+    android:gravity="center"
+    tools:context="com.example.sghaier.foodin.login">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:weightSum="1"
+        android:id="@+id/linearLayout19"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:layout_width="204dp"
+            android:layout_height="45dp"
+            android:background="@drawable/foodinlogo"
+            android:layout_marginTop="10dp"
+            android:id="@+id/logoidfoodin"
+            android:layout_below="@+id/imageView8"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="La Restauration 3.0 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:id="@+id/tv_login_restauration"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_below="@+id/imageView38"
+            android:layout_centerHorizontal="true" />
+
+        <com.facebook.login.widget.LoginButton
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="24dp"
+            android:textSize="13dp"
+            android:textAllCaps="false"
+            app:com_facebook_login_text="@string/facebook"
+            app:com_facebook_logout_text="Se deconnecter"
+            android:textColor="@color/white"
+            android:id="@+id/btn_login_fcb"
+            android:background="#405A92"
+            android:layout_marginTop="44dp"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="34dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/btn_login_fcb"
+            android:textColor="@color/gray"
+            android:hint="@string/hint_adresse_email"
+            android:textColorHint="#9B9B9B"
+            android:id="@+id/edit_login_email"
+            android:background="#E3D1CECB"
+            android:layout_below="@+id/btn_login_fcb"
+ />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:inputType="textPassword"
+            android:shadowRadius="3"
+            android:background="#E3D1CECB"
+            android:gravity="left|center_vertical"
+            android:ems="10"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/btn_login_fcb"
+            android:textColor="@color/gray"
+            android:textColorHint="#9B9B9B"
+            android:hint="@string/hint_passwd"
+            android:id="@+id/edit_login_passwd"
+            android:layout_below="@+id/edit_login_email"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_passwd"
+            android:id="@+id/tv_forget_passwd"
+            android:textColor="#9B9B9B"
+            android:textSize="13dp"
+            android:gravity="bottom|center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="17dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="@string/connect"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:id="@+id/btn_login_connect"
+            android:background="#E6E72587"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="24dp"
+            android:layout_below="@+id/tv_forget_passwd"
+            android:layout_marginTop="88dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crèer mon compte plus tard"
+            android:textSize="13dp"
+            android:textColor="@color/white"
+            android:id="@+id/login_tv_creat"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:layout_above="@+id/tv_ici"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_acount"
+            android:textColor="#E94095"
+            android:textSize="13dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="27dp"
+            android:id="@+id/tv_ici"
+            android:gravity="bottom|center"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

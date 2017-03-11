@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sghaier.foodin.Restau">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout6">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="top"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="@dimen/items_margbottom_status"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/localisationlogo"
+                android:id="@+id/imageView18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Aix-en-provence"
+                android:layout_marginLeft="@dimen/items_margbottom_status"
+                android:id="@+id/textView36"
+                android:textSize="12dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView18"
+                android:layout_toEndOf="@+id/imageView18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Modifier"
+                android:textSize="12dp"
+                android:id="@+id/restau_tv_modifier"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rastaurants ouverts"
+            android:textColor="@color/gray"
+            android:textSize="18dp"
+            android:id="@+id/restau_tv_restaurants_ouvert" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listresto"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

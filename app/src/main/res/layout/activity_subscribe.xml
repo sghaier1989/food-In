@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.sghaier.foodin.Subscribe">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:id="@+id/relativeLayout222"
+                >
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/imageView3"
+                    android:src="@drawable/avatar"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/relativeLayout222"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/activity_horizontal_margin">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:textSize="13dp"
+                    android:layout_marginTop="13dp"
+                    android:hint="Adresse email"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+
+                    android:paddingLeft="@dimen/edit_padding"
+                    android:background="@drawable/inputsubscribe"
+                    android:id="@+id/edit_info_email_subscribe"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColorHint="#9B9B9B" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_height="46dp"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/edit_padding"
+
+                    android:background="@drawable/inputsubscribe">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Civilité"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="13dp"
+                        android:paddingLeft="@dimen/edit_padding"
+                        android:id="@+id/textView9"
+                        android:textColorHint="#CDCDCD"
+                        android:textColor="#9B9B9B" />
+
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" MR"
+
+                            android:id="@+id/subscribe_rb_mr"
+                            android:checked="true"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:button="@drawable/bgradiobtn"
+                            android:textColor="#9B9B9B" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" MME"
+                            android:id="@+id/subscribe_rb_mme"
+                            android:checked="false"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:button="@drawable/bgradiobtn"
+                            android:textColor="#9B9B9B" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" MLLE"
+                            android:id="@+id/subscribe_rb_mlle"
+                            android:checked="false"
+                            android:button="@drawable/bgradiobtn"
+                            android:textColor="#9B9B9B" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:textSize="13dp"
+                    android:layout_marginTop="13dp"
+                    android:inputType="textPersonName"
+                    android:hint="@string/prenom"
+                    android:ems="10"
+                    android:background="@drawable/inputsubscribe"
+                    android:textColorHint="#9B9B9B"
+                    android:paddingLeft="@dimen/edit_padding"
+                    android:id="@+id/edit_info_prenom"
+                    android:layout_below="@+id/editText2"
+                    android:layout_alignRight="@+id/edit_info_email_subscribe"
+                    android:layout_alignEnd="@+id/edit_info_email_subscribe"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                     />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:textSize="13dp"
+                    android:layout_marginTop="13dp"
+                    android:inputType="textPersonName"
+                    android:hint="@string/nom"
+                    android:paddingLeft="@dimen/edit_padding"
+                    android:ems="10"
+                    android:id="@+id/edit_info_nom"
+                    android:layout_below="@+id/edit_info_nom"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/inputsubscribe"
+                    android:textColorHint="#9B9B9B" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:textSize="13dp"
+                    android:layout_marginTop="13dp"
+                    android:inputType="textPassword"
+                    android:hint="@string/hint_passwd"
+                    android:ems="10"
+                    android:paddingLeft="@dimen/edit_padding"
+                    android:id="@+id/edit_info_passwd_edit"
+                    android:layout_below="@+id/edit_info_nom"
+                    android:layout_alignRight="@+id/edit_info_nom"
+                    android:layout_alignEnd="@+id/edit_info_nom"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/inputsubscribe"
+                    android:textColorHint="#9B9B9B" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:textSize="13dp"
+                    android:layout_marginTop="13dp"
+                    android:ems="10"
+                    android:id="@+id/confirm_passwd_subscribe"
+                    android:hint="@string/confirm_passwd"
+                    android:layout_below="@+id/edit_info_passwd_edit"
+                    android:paddingLeft="@dimen/edit_padding"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/inputsubscribe"
+                    android:textColorHint="#9B9B9B" />
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:textSize="13dp"
+                    android:layout_marginTop="13dp"
+                    android:inputType="textPostalAddress"
+                    android:hint="@string/hint_adresse_postale"
+                    android:ems="10"
+                    android:paddingLeft="@dimen/edit_padding"
+                    android:id="@+id/edit_adresse_subscribe"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/inputsubscribe"
+                    android:textColorHint="#9B9B9B" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:textSize="13dp"
+                    android:layout_marginTop="13dp"
+                    android:inputType="textPostalAddress"
+                    android:hint="@string/hint_adresse_postale_cp"
+                    android:ems="10"
+                    android:paddingLeft="@dimen/edit_padding"
+                    android:id="@+id/edit_adresse2_subscribe"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/inputsubscribe"
+                    android:textColorHint="#9B9B9B" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:textSize="13dp"
+                    android:layout_marginTop="13dp"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:hint="@string/hint_phone"
+                    android:id="@+id/phone_subscribe"
+                    android:paddingLeft="@dimen/edit_padding"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/inputsubscribe"
+                    android:textColorHint="#9B9B9B" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:textSize="14dp"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/validate"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btnrose"
+                    android:id="@+id/btn_subscribe_validate" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

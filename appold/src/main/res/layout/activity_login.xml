@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/splash2"
+    android:gravity="center"
+    tools:context="com.example.sghaier.foodin.login">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btn_login_connect">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="14dp"
+            android:textAllCaps="false"
+            android:text="@string/facebook"
+            android:textColor="@color/white"
+            android:id="@+id/btn_login_fcb"
+            android:background="@drawable/btnfcb"
+            android:layout_marginTop="80dp"
+            android:gravity="center_vertical|center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="30dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin_login"
+            android:layout_marginRight="@dimen/margin_login"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/edit_padding"
+            android:textSize="@dimen/btn_login_fcb"
+            android:textColor="@color/gray"
+            android:hint="@string/hint_adresse_email"
+            android:textColorHint="@color/gray"
+            android:id="@+id/edit_login_email"
+            android:background="#E3D1CECB"
+            android:layout_below="@+id/btn_login_fcb"
+            android:layout_alignLeft="@+id/btn_login_fcb"
+            android:layout_alignStart="@+id/btn_login_fcb"
+            android:layout_alignRight="@+id/btn_login_fcb"
+            android:layout_alignEnd="@+id/btn_login_fcb" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/edit_padding"
+            android:layout_marginTop="10dp"
+            android:background="#E3D1CECB"
+            android:gravity="left|center_vertical"
+            android:textColorHint="@color/gray"
+            android:ems="10"
+            android:textSize="@dimen/btn_login_fcb"
+            android:textColor="@color/gray"
+            android:hint="@string/hint_passwd"
+            android:id="@+id/edit_login_passwd"
+            android:layout_below="@+id/edit_login_email"
+            android:layout_alignLeft="@+id/edit_login_email"
+            android:layout_alignStart="@+id/edit_login_email"
+            android:layout_alignRight="@+id/edit_login_email"
+            android:layout_alignEnd="@+id/edit_login_email"
+            android:layout_marginLeft="@dimen/margin_login"
+            android:layout_marginRight="@dimen/margin_login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_passwd"
+            android:id="@+id/tv_forget_passwd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/passwd_oublie"
+            android:gravity="bottom|center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Creer mon compte plus tard"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:id="@+id/login_tv_creat"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/tv_ici"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_acount"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/btn_login_fcb"
+        android:id="@+id/tv_ici"
+        android:gravity="bottom|center"
+        android:paddingBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/connect"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:id="@+id/btn_login_connect"
+        android:background="@drawable/btnrose"
+        android:layout_above="@+id/login_tv_creat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/margin_login"
+        android:layout_marginRight="@dimen/margin_login"/>
+
+</RelativeLayout>

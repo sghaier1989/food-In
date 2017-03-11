@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/fooderbasdepage"
+
+            android:title="Fooder" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Recherche un restaurant" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/modifierinfos"
+            android:title="Modifier mon profil" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Historique des commandes" />
+        <item
+            android:id="@+id/nav_suivi"
+            android:icon="@drawable/cocheplein"
+            android:title="Suivi de commande" />
+    </group>
+
+</menu>

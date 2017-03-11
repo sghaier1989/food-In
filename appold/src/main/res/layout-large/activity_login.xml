@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slpash"
+    android:gravity="center"
+    tools:context="com.example.sghaier.foodin.login">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/btn_login_fcb"
+        android:textAllCaps="false"
+        android:text="@string/facebook"
+        android:textColor="@color/white"
+        android:id="@+id/btn_login_fcb"
+        android:background="@drawable/btnfcb"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_login"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/edit_padding"
+        android:textSize="@dimen/btn_login_fcb"
+        android:textColor="@color/gray"
+        android:hint="@string/hint_adresse_email"
+        android:id="@+id/edit_login_email"
+        android:background="@color/silver"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/btn_login_fcb"
+        android:layout_alignLeft="@+id/btn_login_fcb"
+        android:layout_alignStart="@+id/btn_login_fcb"
+        android:layout_alignRight="@+id/btn_login_fcb"
+        android:layout_alignEnd="@+id/btn_login_fcb" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_login"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/edit_padding"
+        android:layout_marginTop="@dimen/margin_login"
+        android:background="@color/silver"
+        android:gravity="left|center_vertical"
+        android:ems="10"
+        android:textSize="@dimen/btn_login_fcb"
+        android:textColor="@color/gray"
+        android:hint="@string/hint_passwd"
+        android:id="@+id/edit_login_passwd"
+        android:layout_below="@+id/edit_login_email"
+        android:layout_alignLeft="@+id/edit_login_email"
+        android:layout_alignStart="@+id/edit_login_email"
+        android:layout_alignRight="@+id/edit_login_email"
+        android:layout_alignEnd="@+id/edit_login_email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forget_passwd"
+        android:layout_marginTop="@dimen/margin_login"
+        android:id="@+id/tv_forget_passwd"
+        android:textColor="@color/white"
+        android:textSize="@dimen/passwd_oublie"
+        android:layout_below="@+id/edit_login_passwd"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connect"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btn_login_fcb"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:id="@+id/btn_login_connect"
+        android:background="@drawable/btnrose"
+        android:layout_below="@+id/tv_forget_passwd"
+        android:layout_marginTop="33dp"
+        android:layout_alignLeft="@+id/edit_login_passwd"
+        android:layout_alignStart="@+id/edit_login_passwd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_acount"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/btn_login_fcb"
+        android:id="@+id/tv_ici"
+        android:gravity="center"
+        android:paddingBottom="@dimen/edit_padding"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/btn_login_connect"
+        android:layout_alignStart="@+id/btn_login_connect" />
+
+</RelativeLayout>

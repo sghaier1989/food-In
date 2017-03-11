@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.sghaier.foodin.AdressDelivery"
+    android:layout_marginTop="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/title_adress_delivry"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/subtitle_adress_delivry"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textColor="@color/fuchsia"
+        android:textSize="@dimen/passwd_oublie"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:background="@color/gray"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="233 cours Mirabeau 13100 AIX-EN-PROVENCE"
+        android:textSize="@dimen/passwd_oublie"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/font_size"
+        android:textColor="@color/fuchsia"
+        android:text="Suggestions"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView50"
+        android:layout_alignLeft="@+id/delivry_btn_valider"
+        android:layout_alignStart="@+id/delivry_btn_valider" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:id="@+id/delivry_btn_valider"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btn_login_fcb"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:background="@drawable/btnrose"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 rue Mazarine 13100 AIX-EN-PROVENCE"
+        android:id="@+id/textView42"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="55 rue Cardinale 13100 AIX-EN-PROVENCE"
+        android:id="@+id/textView48"
+        android:layout_below="@+id/textView42"
+        android:layout_marginBottom="10dp"
+        android:textSize="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="157 av des Belges 13100 AIX-EN-PROVENCE"
+        android:id="@+id/textView49"
+        android:layout_below="@+id/textView48"
+        android:textSize="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="déplacez l&apos;épingle pour ajuster l&apos;adresse"
+        android:textColor="@color/fuchsia"
+        android:id="@+id/textView50"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/tempmaps"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </LinearLayout>
+</RelativeLayout>
